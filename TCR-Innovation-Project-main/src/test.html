@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        perspective: 1100px;
+        background: black;
+      }
+      .img {
+        display: none !important;
+        opacity: 0 !important;
+        position: Absolute !important;
+        left: -999%;
+        top: -999%;
+      }
+      .box {
+        position: relative;
+        width: 55%;
+        /* height: 80%; */
+        margin: 1% auto;
+        padding-bottom: 25%;
+        transform: rotateY(29deg);
+        transform-style: preserve-3d;
+      }
+      .box div.top {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        float: left;
+        background-image: url("../vector-maps/bind.png");
+        background-size: cover;
+        transform-style: preserve-3d;
+        outline: 1px solid transparent;
+        -webkit-backface-visibility: hidden !important;
+      }
+      .box div.top:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.15);
+      }
+      .box .left {
+        left: 0;
+        background-position: 0% 0;
+      }
+      .box .center {
+        left: 34.83%;
+        background-position: -100% 0;
+      }
+      .box .right {
+        left: 69.66%;
+        background-position: -197% 0;
+      }
+      .box div.top > .side {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 100%;
+        width: 10%;
+        height: 100%;
+        background: url("../vector-maps/bind.png");
+        background-size: auto 100%;
+        transform-origin: 100% 50%;
+        transform: rotateY(-90deg);
+        -webkit-backface-visibility: hidden !important;
+      }
+      .box div.top > .side:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.15);
+      }
+      .box .left > .side {
+        background-position: 0% 0;
+      }
+      .box .center > .side {
+        background-position: -798% 0px !important;
+      }
+      .box .right > .side {
+        background-position: -2000.4% 0 !important;
+      }
+      .box div.top .reflection {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: 50% 100%;
+        transform: rotateX(-90deg);
+        background-image: url("../vector-maps/bind.png");
+        background-size: auto 100%;
+        outline: 1px solid transparent;
+      }
+      .box .left > .reflection {
+        left: 0;
+        background-position: 0% 0;
+      }
+      .box .center > .reflection {
+        left: 34.83%;
+        background-position: -100% 0;
+      }
+      .box .right > .reflection {
+        left: 69.66%;
+        background-position: -197% 0;
+      }
+      .box .overlay {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 99.7%;
+        transform-origin: 50% 100%;
+        transform: rotateX(-90deg);
+        background: linear-gradient(180deg, black 0%, rgba(0, 0, 0, 0.6) 123%);
+        outline: 15px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preloader">
+      <img class="img" src="../vector-maps/ascent.png" /><img
+        class="img"
+        src="../vector-maps/bind.png"
+      /><img class="img" src="../vector-maps/breeze.png" /><img
+        class="img"
+        src="../vector-maps/haven.png"
+      /><img class="img" src="../vector-maps/icebox.png" /><img
+        class="img"
+        src="../vector-maps/split.png"
+      />
+    </div>
+    <div class="" style="display: flex; justify-content: center">
+      <div class="box">
+        <div class="left top">
+          <div class="side"></div>
+          <div class="reflection"></div>
+          <div class="overlay"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

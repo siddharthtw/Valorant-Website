@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Agents</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/agents.css">
+    <style>
+        body{
+            background-color: #ff4655!important;
+        }
+        .nav-link {
+            padding: 10px 40px!important;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark" style="background-color: black!important;">
+        <a class="navbar-brand" href="./">
+          <img src="../assets/images/sample-logo.png" height="40">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./agents.html">Agents</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./maps.html">Maps</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <section>
+          <div class="video-container position-relative">
+              <!-- add overlay to video -->
+              <div class="overlay position-absolute">
+                  <div class="py-5 mt-5">
+                      <div class="row justify-content-center align-items-center" style="width: 100vw;">
+                          <div class="col-md-12 text-center">
+                              <h1 class="text-center text-white">AGENTS</h1>
+                          </div>
+                      </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- scrollable div -->
+                                    <div class="scrollable-div" style="height: 400px; overflow-y: scroll;">
+                                        <h1 class="agent-name text-white card-title active">JETT</h1>
+                                        <h1 class="agent-name text-white card-title">SOVA</h1>
+                                        <h1 class="agent-name text-white card-title">SAGE</h1>
+                                        <h1 class="agent-name text-white card-title">PHOENIX</h1>
+                                        <h1 class="agent-name text-white card-title">BRIMSTONE</h1>
+                                        <h1 class="agent-name text-white card-title">VIPER</h1>
+                                        <h1 class="agent-name text-white card-title">KILLJOY</h1>
+                                        <h1 class="agent-name text-white card-title">RAZE</h1>
+                                    </div>
+                                    
+                                    <div class="description-text py-5 mt-5">
+                                        <div class="card border-0 w-50" style="background: #0f1923; border-radius: 5px;">
+                                            <div class="text-white card-body">
+                                                <h1 class="card-title card-agent-name">JETT</h1>
+                                                <p class="card-text card-agent-description">
+                                                    Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="agent-image text-center position-sticky" style="top: 200px">
+                                        <img src="../assets/vector-agents/jett.png" alt="Agent Image" id="agent-image" height="600px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  </div>
+              </div>
+              <!-- add video -->
+            <video src="../assets/videos/agent-background-generic.mp4" autoplay loop style="position:absolute;width: 100%; display:block; z-index: -1"></video>
+          </div>
+      </section>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        const description_data = 
+            [{"name": "brimstone", "description": "Joining from the USA, Brimstone's orbital arsenal ensures his squad always has the advantage. His ability to deliver utility precisely and from a distance make him an unmatched boots-on-the-ground commander."},
+            {"name": "jett", "description": "Representing her home country of South Korea, Jett's agile and evasive fighting style lets her take risks no one else can. She runs circles around every skirmish, cutting enemies before they even know what hit them."},
+            {"name": "killjoy", "description": "The genius of Germany. Killjoy secures the battlefield with ease using her arsenal of inventions. If the damage from her gear doesn't stop her enemies, her robots' debuff will help make short work of them."},
+            {"name": "sage", "description": "The stronghold of China, Sage creates safety for herself and her team wherever she goes. Able to revive fallen friends and stave off aggressive pushes, she provides a calm center to a hellish fight."},
+            {"name": "sova", "description": "Born from the eternal winter of Russia's tundra, Sova tracks, finds, and eliminates enemies with ruthless efficiency and precision. His custom bow and incredible scouting abilities ensure that even if you run, you cannot hide."},
+            {"name": "viper", "description": "The American chemist, Viper deploys an array of poisonous chemical devices to control the battlefield and cripple the enemy's vision. If the toxins don't kill her prey, her mind games surely will."},
+            {"name": "raze", "description": "Raze explodes out of Brazil with her big personality and big guns. With her blunt-force-trauma playstyle, she excels at flushing entrenched enemies and clearing tight spaces with a generous dose of “boom.”"},
+            {"name": "phoenix", "description": "Hailing from the U.K., Phoenix's star power shines through in his fighting style, igniting the battlefield with flash and flare. Whether he's got backup or not, he'll rush into a fight on his own terms."}]
+
+        $(document).ready(function(){
+            $(".scrollable-div h1").click(function(){
+                $(".scrollable-div h1").removeClass("active");
+                $(this).addClass("active");
+                var agent_name = $(this).html().toLowerCase();
+                var agent_description = description_data.find(function(element){ return element.name == agent_name; });
+                let imageName = "../assets/vector-agents/" + $(this).html().toLowerCase() + '.png';
+                $("#agent-image").attr("src", imageName);
+                $(".card-agent-name").html(agent_description.name.toUpperCase());
+                $(".card-agent-description").html(agent_description.description);
+            })
+        })
+    </script>
+  </body>
+</html>

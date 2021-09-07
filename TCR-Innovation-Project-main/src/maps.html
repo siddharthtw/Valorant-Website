@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Maps</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/agents.css">
+    <link rel="stylesheet" href="../assets/styles/maps.css">
+    
+    <style>
+        .nav-link {
+          padding: 10px 40px!important;
+        }
+      </style>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark" style="background-color: black!important;">
+        <a class="navbar-brand" href="./">
+          <img src="../assets/images/sample-logo.png" height="40">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./agents.html">Agents</a>
+                </li>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./maps.html">Maps</a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+      <div class="wrapper py-5">
+          
+        <div class="row justify-content-center align-items-center py-4" style="width: 100vw;">
+            <div class="col-md-12 text-center">
+                <h1 class="text-center text-white">MAPS</h1>
+            </div>
+        </div>
+        <div class="preloader">
+            <img class="img" src="../assets/vector-maps/ascent.png" />
+            <img class="img" src="../assets/vector-maps/bind.png" />
+            <img class="img" src="../assets/vector-maps/breeze.png" />
+            <img class="img" src="../assets/vector-maps/haven.png" />
+            <img class="img" src="../assets/vector-maps/icebox.png" />
+            <img
+              class="img"
+              src="../assets/vector-maps/split.png"
+            />
+          </div>
+          <div style="display: flex; justify-content: center; align-items: center;">
+                <div class="box">
+                    <div class="left top">
+                        <div class="side"></div>
+                        <div class="reflection"></div>
+                        <div class="overlay"></div>
+                    </div>
+                </div>
+                <div class="card border-0 description-card" style="color: black; border-radius: 5px 0 0 5px; width: 400px">
+                    <div class="card-body">
+                        <h1 class="card-title card-map-name"></h1>
+                        <p class="card-text card-map-description">
+                        </p>
+                    </div>
+                </div>
+          </div>
+      </div>
+
+          <div class="navigation-buttons">
+                <button class="arrow-button left-arrow-button">
+                    <i class="fas fa-chevron-left fa-2x"></i>
+                </button>
+                <button class="arrow-button right-arrow-button">
+                    <i class="fas fa-chevron-right fa-2x"></i>
+                </button>
+          </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        
+        const data = [
+            {
+                id: 0,
+                name: "ASCENT",
+                image: "../assets/vector-maps/ascent.png",
+                themeColor:  "#d3c7e2",
+                description: "An open playground for small wars of position and attrition divide two sites on Ascent. Each site can be fortified by irreversible bomb doors; once they’re down, you’ll have to destroy them or find another way. Yield as little territory as possible."
+            },
+            {
+                id: 1,
+                name: "BIND",
+                image: "../assets/vector-maps/bind.png",
+                themeColor:  "#ffe6ce",
+                description: "Two sites. No middle. Gotta pick left or right. What’s it going to be then? Both offer direct paths for attackers and a pair of one-way teleporters make it easier to flank."
+            },
+            {
+                id: 2,
+                name: "BREEZE",
+                image: "../assets/vector-maps/breeze.png",
+                themeColor:  "#a3d5f1",
+                description: "Take in the sights of historic ruins or seaside caves on this tropical paradise. But bring some cover. You'll need them for the wide open spaces and long range engagements. Watch your flanks and this will be a Breeze.",
+            },
+            {
+                id: 3,
+                name: "HAVEN",
+                image: "../assets/vector-maps/haven.png",
+                themeColor:  "#c9fff4",
+                description: "Beneath a forgotten monastery, a clamour emerges from rival Agents clashing to control three sites. There’s more territory to control, but defenders can use the extra real estate for aggressive pushes."
+            },
+            {
+                id: 4,
+                name: "ICEBOX",
+                image: "../assets/vector-maps/icebox.png",
+                themeColor:  "#b8d1ff",
+                description: "Your next battleground is a secret Kingdom excavation site overtaken by the arctic. The two plant sites protected by snow and metal require some horizontal finesse. Take advantage of the ziplines and they’ll never see you coming."
+            },
+            {
+                id: 5,
+                name: "SPLIT",
+                image: "../assets/vector-maps/split.png",
+                themeColor:  "#cbffe5",
+                description: "If you want to go far, you’ll have to go up. A pair of sites split by an elevated center allows for rapid movement using two rope ascenders. Each site is built with a looming tower vital for control. Remember to watch above before it all blows sky-high."
+            },
+        ];
+        currIdx = 0;
+
+        const changeData = (idx) => {
+            // animate the description card
+            $(".description-card").animate({
+                right: "-400px",
+                top: "0px",
+                width: "400px",
+                opacity: "1"
+            }, 10);
+            $('.box').animate({
+                left: "-400px",
+                top: "0px",
+                opacity: "1"
+            }, 10);
+            $(".card-map-name").text(data[idx].name);
+            $(".card-map-description").text(data[idx].description);
+            $(".description-card").css("background", data[idx].themeColor);
+            $(".description-card").css("box-shadow","0px 0px 10px "+ data[idx].themeColor);
+            $(".box .top").css("background-image", "url("+data[idx].image + ")");
+            $(".box .top .side").css("background-image", "url("+data[idx].image + ")");
+            $(".box .top .reflection").css("background-image", "url("+data[idx].image + ")");
+            // animate the description card
+            $(".description-card").animate({
+                right: "0px",
+                top: "0px",
+                width: "400px",
+                opacity: "1"
+            }, 500);
+            $('.box').animate({
+                left: "0px",
+                top: "0px",
+                opacity: "1"
+            }, 500);
+        }
+
+        $(document).ready(function(){
+            changeData(0);
+            $('.right-arrow-button').click(function(){
+                currIdx = (currIdx + 1)%6;
+                changeData(currIdx);
+            })
+            $('.left-arrow-button').click(function(){
+                currIdx = currIdx === 0 ? 5 : currIdx - 1;
+                changeData(currIdx);
+            })
+        }) 
+    </script>
+  </body>
+</html>
